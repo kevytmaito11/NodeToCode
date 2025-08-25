@@ -383,7 +383,7 @@ public:
 
     /** Reference to user secrets containing API keys */
     UPROPERTY(Transient)
-    mutable UN2CUserSecrets* UserSecrets;
+    mutable TObjectPtr<UN2CUserSecrets> UserSecrets;
 
     /** Anthropic Model Selection - Sonnet 4 recommended*/
     UPROPERTY(Config, EditAnywhere, BlueprintReadOnly, Category = "Node to Code | LLM Services | Anthropic")
